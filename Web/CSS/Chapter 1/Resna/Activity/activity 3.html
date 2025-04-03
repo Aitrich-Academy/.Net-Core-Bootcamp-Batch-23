@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index Example</title>
+</head>
+<style>
+    .container{
+        position: absolute;
+        background-color: rgb(169, 170, 173);
+        width: 300px;
+        height: 300px;
+
+    }
+    .box1{
+    position: absolute;
+        top: 80px;
+        left: 130px;
+        width: 100px;
+        height: 130px;
+        background-color: rgb(23, 110, 168);
+    }
+    .box2{
+        position: absolute;
+        top: 40px;
+        left: 0px;
+        width: 150px;
+        height: 200px;
+        background-color: rgb(73, 198, 230);
+        border: 1;
+        border-width: 5px;
+        border-radius: 2px;
+        border-style: solid;
+        border-block-color: black;
+    }
+    h3{
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        font-size:20px ;
+        font-weight: 200;
+        font-style: normal;
+    } 
+    h4{
+        position: absolute;
+        top: 70px;
+        left: 10px;
+        color: rgb(46, 44, 44);
+        font-size: 15px;
+        font-weight: 100;
+        font-style: normal;
+    }  
+       
+    h1{
+        position: absolute;
+        top: 350px;
+        left: 20pxs;
+        
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 50px;
+        text-indent: 5px;
+        
+    }
+    
+
+</style>
+<body>
+    <div class="container">
+        <div class="box1">
+            <h2 style="position: absolute;margin-top: 20px;margin-left: 0;font-style: inherit;font-size: 50px;   color: white;" >OB</h2>   </div>
+        <div class="box2">
+            <h3>jobseeker</h3>
+            <h4>Enthusiastic
+                job seeker eager to
+                conitrbute and learn
+                in a dianamic work
+                envionment.
+            </h4>
+
+        </div>
+    </div>
+    <div>
+        <h1 style="text-decoration: line-through;">Job Provider</h1>
+    </div>
+    <div>
+        <h1 style="position: absolute;top: 450px;left: 20px;font-size: 30px;font-style: oblique;font-family: 'Times New Roman', Times, serif;">Job Provider</h1>
+    </div>
+    <div>
+        <h1 style="position: absolute;top: 500px; left: 20px;text-decoration-line: underline;;"  >Job Provider</h1>
+    </div>
+    <div>
+        <h1 style="position: absolute;top: 580px; left: 20px;font-weight: bolder;font-style: normal;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Job Provider</h1>
+    </div>
+    
+
+    
+</body>
+</html>
