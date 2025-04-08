@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: #e5e5e5;
+    }
+   .leftside {
+        
+        position: absolute;
+        width: 284px;
+        height: 1049px;
+        left: -14px;
+        top: -13px;
+        background: #117EBD;
+    
+        }
+        .bgimg{
+            position: absolute;
+            width: 1000px;
+            height: 431px;
+            left: 390px;
+            top: 400px;
+            align-content: center;
+            background: url(Images/cheerful.png);
+        }
+        .circle{
+            background-color: #e5e5e5;
+            border-radius: 50%;
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            margin-left: 90px;
+            margin-top: 80px;
+        }
+        .profile{
+            margin-top: -10px;
+        height: 100px;
+        width: 250px;
+        text-align: center;
+        justify-content: center;
+        color: white;
+        }
+        .olivia
+    {
+        position: absolute;
+        color: white;
+        text-align: center;
+        line-height: 5px;
+        font-size: 13px;
+        margin-top: 78px;
+        margin-left: 75px;
+    }
+    .p1{
+        position: absolute;
+        top:10px;
+        left: 40px;
+    }
+    .p2{
+        position: absolute;
+        top: 25px;
+        left:20px ;
+    }
+    
+        
+   .menu
+    {
+        position: absolute;
+        margin-top: 200px;
+    }
+    .li:hover{
+        background-color: rgb(245, 182, 10);
+        scale: 1.15;
+        transition: scale 2s;
+        width: fit-content;
+        border-radius: 15px;
+    }
+
+    li
+    {
+        background-repeat: no-repeat;
+        font-size: 18px;
+        margin-top: 13px;
+        margin-left: 10px;
+        line-height: 35px;
+        padding-left: 35px;
+        
+    }
+    a{
+        font-size: 16px;
+        color: white;
+    }
+    .addnew{
+        position: absolute;
+       margin-top:550px ;
+        margin-left:10px ;
+    }
+    .new:hover{
+        background-color: rgb(245, 182, 10);
+        scale: 1.5;
+        transition: scale 2s;
+        background-size: 100px;
+        width: fit-content;
+    }
+    .new{
+        font-size: large;
+        color: white;
+        font-weight: bold;
+    }
+    .rightside{
+     width:1200px ;
+     height: 100px;
+     position: absolute;
+     top: 0px;
+     left: 270px;
+     background-color:white;   
+    }
+    h2{
+        position: absolute;
+       margin-top: 60px;
+        margin-left: 60px;
+        font-size: 25px;
+        font-weight: bold;
+        color: black;
+        
+    }
+    h3{
+      position: relative; 
+      margin-top: 15px;
+      margin-left: 50px;
+      color: rgb(43, 41, 41);
+      font-size: 18px;
+      font-weight: lighter;
+      font-style: normal;
+    }
+    .listjob{
+        position: absolute;
+        top: 15px;
+        left: 300px;
+    }
+    .postjob{
+        position: absolute;
+        top: 15px;
+        left: 400px;
+    }
+    .updatejob{
+        position:absolute;
+        top: 15px;
+        left: 550px;
+    }p
+    .rtimage{
+        position:absolute;
+        left:600px ;
+        top: 10px;
+    }
+    .bell{
+        position: absolute;
+        top: 15px;
+        left: 900px;
+       color: gray;
+    }
+    .logout{
+        position: absolute;
+        top: 10px;
+        left: 1000px;
+        color: rgb(63, 60, 60);
+        
+
+    }
+    .box{
+        width: 800px;
+        height: 45px;
+        background-color: white;
+        border-color: black;
+        border: 1px solid;
+        border-radius: 15px;
+        position: absolute;
+        margin-top: 92px;
+        margin-left: 300px;
+        
+    }
+    .img{
+        position: absolute;
+        top:12px ;
+        left:670px ;
+        display: inline-block;
+    }
+    h4{
+        font-size: 12px;
+        color: rgb(114, 110, 110);
+        font-weight: normal;
+        display: inline-block;
+        position: absolute;
+        margin-top: 15px;
+        margin-left: 70px;
+    }
+    h5{
+        position: absolute;
+        margin-top: 180px;
+        margin-left: 300px;
+        font-size: 13px;
+        font-weight: bold;
+        color: black;
+    }
+    .ol{
+        position: absolute;
+        margin-top: 250px;
+        margin-left: 350px;
+    }
+    .header1{
+        position: absolute;
+        margin-top:-50px ;
+        margin-left: 80px;
+        font-size: 12px;
+        font-weight: bold;
+        color: black;
+        text-decoration: solid;
+    }
+    .header2{
+        position: absolute;
+        margin-top:-15px ;
+        margin-left:80px ;
+        font-size: 12px;
+        font-weight: bold;
+        color: rgb(68, 151, 202);
+    }
+    .li2{
+        position: absolute;
+        margin-top: -15px;
+        margin-left: 100px;
+        font-size: 12px;
+        color: rgb(85, 80, 80);
+        list-style-position: outside;
+        display: list-item;
+    }
+    .blue img{
+        position: absolute;
+        margin-top: -10px;
+        margin-left: -190px;
+    }
+    .about{
+        position: absolute;
+        margin-top: -10px;
+        margin-left: 100px;
+        background-size: contain;
+        border: none;
+        border-radius: 15px;
+        background-color: rgb(168, 130, 103);
+        font-size: 14px;
+        font-weight: normal;
+        color: white;
+        padding: 7px 15px ;
+        display: inline-block;
+    }
+    .bottom{
+        width: 1500px;
+        height: 300px;
+        background-color: #117EBD;
+        position: absolute;
+        margin-left: -1200px;
+        
+    }
+    .b img{
+        position: absolute;
+        margin-left: 600px;
+        margin-top: 50px;
+    }
+    #home{
+        position: absolute;
+        margin-left: -180px;
+        animation-name: slide-right;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes slide-right{
+        from 0%{margin-left: -180px;}
+        50%{margin-left: -230px;}
+        100%{margin-left: -130px;}
+    }
+    
+    h1{
+       position: absolute;
+       margin-top: 90px;
+       margin-left: 350px;
+       font-size: 40px;
+       color: black;
+       font-style: normal;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       font-style: italic;
+    }
+    .rightphoto{
+        position: absolute;
+        margin-top:-750px ;
+        margin-left: ;
+        background-image: url(Images/professional1.png);
+        
+          
+    }
+    </style>
+</head>
+<body>
+        <tr>
+            <td>
+    <div class="leftside">
+        <div class="profile">
+            <div class="circle"><img src="Images/cheerful.png"></div>
+        </div>
+        <div class="olivia">
+            
+        <div class="p1">Olivia</div>
+        <div class="p2">olivia@mail.com</div>
+        <div class="menu">
+            <ul type="none">
+                <div class="li"><li style="background-image: url(Images/dashboard\ 1.png);">Dashboard</li></div>
+                <div class="li"><li style="background-image: url(Images/suitcase\ 2.png);">Jobs</li></div>
+                <div class="li"><li style="background-image: url(Images/application\ \(1\)\ 1.png);">Applications</li></div>
+                <div class="li"><li style="background-image: url(Images/question\ \(1\)\ 1.png);">Interview</li></div>
+                <div class="li"><li style="background-image: url(Images/message\ 1.png);">Messages</li></div>
+                <div class="li"><li style="background-image: url(Images/settings\ 1.png);">Settings</li></div>
+            </ul>
+        </div>
+        <div class="addnew">
+            <img src="Images/add-group (1) 1.png">
+            <div class="new"><a>Add New</a></div>
+        </div>
+    </div>
+    </div>
+            </td>
+            <td>
+                <div class="rightside">
+                    <h2>Find Jobs</h2>
+                    <h3 class="listjob" >List Job</h3>
+                    <h3 class="postjob">Post Jobs</h3>
+                    <h3 class="updatejob">Update Jobs</h3>
+                    <div class="rtimage">
+                        <div class="bell"><img src="Images/notification-bing.png"></div>
+                        <div class="logout"><img src="Images/Group 33999.png"></div>
+                    </div>
+                </div>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <div class="box">
+                <h4>Search By Job Title,Qualification,Industry</h4>
+                <div class="img"><img src="Images/icon filter.png"></div>
+            </div>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            
+            <div>
+                <h5>showing 106 jobs</h5>
+            </div>
+            <td>
+                <td>
+                    <div>
+                        <h5 style="color: rgb(146, 144, 144);position: absolute;top: 30px;left: 470px;">sort by:</h5>
+                        <h5 style="position: absolute;top:30px;left: 530px;">Newest job</h5>
+                    </div>
+                </td>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <div class="ol">
+                    <img src="Images/Rectangle 14 (2) - Copy.png">
+                  <div class="header1" >UI/UX Designer</div>
+                  <div class="header2" >Shopee
+                  <div class="li2">
+                     Location</div>
+                  </div>
+            </td>
+            <td>
+                <div class="blue img" >
+                    <img src="Images/Group 5696.png">
+                </div>
+                <p>We are looking for a UI/UX designer to turn our software in to easy-to-use<br>
+                   product for our clients
+                </p>
+                
+                   <div   class="about" style="position: absolute;margin-top: 10px;margin-left: -20px;">FullTime</div>
+                   <div class="about" style="position: absolute;margin-top: 10px;margin-left: 80px;">MidLevel</div>
+                   <div class="about" style="position: absolute;margin-top: 10px;margin-left: 180px;">$3000-$5000</div>
+                  
+                   <div class="about" style="position: absolute;margin-top: 10px;margin-left: 320px;">Indonesia</div>
+                   <div class="about" style="position: absolute;margin-top: 10px;margin-left: 430px;">Onsite</div>
+            </td>
+
+        </tr>
+        <br><br><br>
+        <tr>
+            <td>
+                <div class="ol">
+                    <img src="Images/Group 5695.png" style="width: 50px;;position: absolute;margin-top: -200px;margin-left:-350px ;"   >
+                  <div class="header1" style="position: absolute;margin-top:-190px ;margin-left: -300px;" >Product Designer</div>
+                  <div class="header2"style="position:absolute;margin-top:-160px;margin-left:-300px" >Amazone
+                  <div class="li2" style="position: absolute;margin-top:-15px ;margin-left: 80px;" >
+                     Location</div>
+                  </div>
+            
+            
+                <div class="blue img">
+                    <img src="Images/Group 5696.png" style="position: absolute;margin-top: -200px;margin-left:-550px;">
+                
+                </div>
+                   <p style="position: absolute;top:-150px ;left: -350px;font-size: 14px;padding-inline: 30px;"> Product Designer responsibilities include defining product specifications,<br>
+                                                                             Creating digital or print drawing and designing fully- functional products
+                   
+                
+            </td>
+       <td>
+
+       
+       <div   class="about" style="position: absolute;margin-top: -50px;margin-left: -350px;">FullTime</div>
+       <div class="about" style="position: absolute;margin-top: -50px;margin-left: -250px;">MidLevel</div>
+       <div class="about" style="position: absolute;margin-top: -50px;margin-left: -150px;">$3000-$5000</div>
+      
+       <div class="about" style="position: absolute;margin-top: -50px;margin-left: -20px;">Indonesia</div>
+       <div class="about" style="position: absolute;margin-top: -50px;margin-left: ;">Onsite</div>
+       </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="ol">
+                    <img src="Images/Rectangle 14 (1).png"style="position:absolute;margin-top:-200px;margin-left:-700px;">
+                  <div class="header1" style="position: absolute;margin-top:-180px ;margin-left:-630px ;" >UX Designer</div>
+                  <div class="header2"style="position:absolute;margin-top:-150px;margin-left:-630px" >Lazada
+                  <div class="li2">
+                     Location</div>
+                  </div>
+                  <div class="blue img">
+                    <img src="Images/Group 5696.png" style="position: absolute;margin-top: -200px;margin-left:-900px;">
+                
+                </div>
+                <p style="position: absolute;margin-top: -100px;margin-left: -700px;">
+                    We are looking for a UI/UX designer to turn our software in to easy-to-use<br>
+                   product for our clients
+                
+                </p>
+            </td>
+        
+        
+            <div class="bottom">
+            <div class="b img" id="home"><img src="Images/home-button 4.png"></div>
+               <div class="b img"  ><img src="Images/calendar (2) 2.png">         </div>
+               <h1>Post Your Job Now........</h1>
+            </div>
+            <div class="rightphoto">
+                <img src="Images/professional1.png" style="width: 450px;">
+            </div>
+</body>
+</html>

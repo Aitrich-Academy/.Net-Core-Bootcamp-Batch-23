@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bouncing{
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            position: relative;
+            background-color: red;
+            animation-name:bouncing;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+             
+        }
+        @keyframes bouncing{
+            0%{left: 0;top: 0;}
+            25%{left: 0px;top: 150px; }
+            50%{left: 0px;top: 0px;}
+            75%{left: 0px;top: 150px;}
+            100%{left: 0px;top: 0px;}
+        }
+        .fade{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation: fadeinout 3s infinite;
+        }
+        @keyframes fadeinout{
+            0%,100%{opacity: 0;}
+            25%,50%{opacity: 1;}
+        }
+        .sliding{
+            color: chocolate;
+            font-size: 25px;
+            font-weight: bold;
+            position: relative;
+            animation: slidein 3s infinite;
+        }
+        @keyframes sliding{
+            0%{left: 100%;opacity: 0;}
+            50%{left: 50%;opacity: 1;}
+            100%{left: 100%;opacity: 0;}
+        }
+        .animation{
+            position: absolute;
+            top: 0;
+            right: 250px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>CSS Animation</h2>
+    <br>
+    <div class="bouncing"></div>
+    <br><br><br><br><br><br><br><br><br>
+    <div class="fade"></div>
+    <br><br>
+    <div class="sliding">DAVID</div>
+</body>
+</html>
