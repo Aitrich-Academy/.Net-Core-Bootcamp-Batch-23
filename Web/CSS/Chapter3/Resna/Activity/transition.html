@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box{
+     width: 200px;
+     height: 300px;
+     background-color: blueviolet;
+     transition: 2s linear 1s;
+    }
+    .box:hover{
+        width: 300px;
+        height: 400px;
+    }
+    .box1{
+        width: 200px;
+        height: 300px;
+        background-color: brown;
+        border: 1px solid;
+        transition: 1s linear 3s;
+    }
+    .box1:hover{
+        width:400px ;
+        background-color:green ;
+        border:2px solid ;
+    }
+    .button{
+        background-color: darkblue;
+        border: none;
+        padding: 14px 30px;
+        color: white;
+        font-size: 14px;
+        display: inline-block;
+        text-align: center;
+        transition: 1s;
+    }
+    .button:hover{
+        background-color: darkgreen;
+        font-size:20px ;
+    }
+    </style>
+</head>
+<body>
+    <h2>Smooth size Transition</h2>
+    <div class="box"></div>
+    <h2>Border Animation</h2>
+    <div class="box1"></div>
+    <h2>Button Hover effect</h2>
+    <div class="button">
+        <button class="button" >login</button>
+        <div class="button"></div>
+    </div>
+</body>
+</html>
