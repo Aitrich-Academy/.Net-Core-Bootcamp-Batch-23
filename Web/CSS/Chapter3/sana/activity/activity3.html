@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.ball{
+    height: 100px;
+    width: 150px;
+    background-color: rgb(10, 250, 170);
+    border: 1px;
+    border-radius: 100%;
+    text-align: center;
+    padding: 30px;
+    align-content: center;
+    margin-left: 520px;
+    margin-top: 60px;
+    color: rgb(240, 4, 4);
+    animation: bounce 1s infinite alternate;
+ }   
+ @keyframes bounce {
+    from{
+        
+        transform: translateY(0) }
+        to{
+            transform: translateY(-100px)} 
+            
+    }
+    .fade{
+    height: 100px;
+    width: 150px;
+    background-color: rgb(239, 102, 214);
+    border: 1px;
+    border-radius: 100%;
+    text-align: center;
+    padding: 30px;
+    align-content: center;
+    margin-left: 520px;
+    margin-top: 60px;
+    color: rgb(21, 4, 83);
+    animation: fades 2s infinite alternate;
+    }
+    @keyframes fades{
+        from{
+            transform: scale(0.5,1);
+        }
+        to{
+            transform: scale(1,2);
+        }
+    }
+    .slide{
+    height:50px;
+    width: 150px;
+    background-color: rgb(213, 249, 105);
+    border: 1px;
+    text-align: center;
+    padding: 30px;
+    align-content: center;
+    color: rgb(53, 2, 11);
+    animation: slides 3s;
+    }
+    @keyframes slides{
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(600px);
+        }
+    }
+</style>
+</head>
+<body>
+    <h2 style="text-align: center";>THIS IS A BOUNCING BALL</h2>
+    <DIV class="ball">
+       <b>BALL BOUNCING</b> 
+    </DIV><br><br><br>
+    <h2 style="text-align: center";>THIS IS A BOUNCING BALL</h2>
+    <DIV class="fade">
+       <b>BALL BOUNCING</b> 
+    </DIV><br><br><br>
+    <h2>sliding text</h2>
+    <div class="slide">
+     WELCOME HOME
+    </div>
+</body>
+</html>
