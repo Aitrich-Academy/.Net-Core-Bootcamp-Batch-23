@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+div.header{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background-image: linear-gradient(to right, red ,#055a5a);
+    color: white;
+}
+.head{
+    animation: blink 1s infinite alternate ease-out;
+}
+@keyframes blink{
+    from{
+      transform: translateY(0);  
+    }
+    to{
+        transform: translateY(-15px);
+    }
+}
+.head{
+    position: absolute;
+   font-family: cursive;
+    top: -2px;
+    left: 400px;
+}
+.h1{
+    position: relative;
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    top: 70px;
+    left: 480px;
+    text-align: center;
+
+}
+.h1:hover{
+    background-color: yellow;
+    color: black;
+    border: 0px solid black;
+    border-radius: 10px;
+}
+.h2{
+    position: relative;
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    top: 20px;
+    left: 560px;
+    text-align: center;
+}
+.h2:hover{
+    background-color: yellow;
+    color: black;
+    border: 0px solid black;
+    border-radius: 10px;
+}
+.h3{
+    position: relative;
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    top: -30px;
+    left: 650px;
+    text-align: center;
+}
+.h3:hover{
+    background-color: yellow;
+    color: black;
+    border: 0px solid black;
+    border-radius: 10px;
+}
+.h4{
+    position: relative;
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    top: -80px;
+    left: 740px;
+    text-align: center; 
+}
+.h4:hover{
+    background-color: yellow;
+    color: black;
+    border: 0px solid black;
+    border-radius: 10px;
+}
+div.about{
+    position: absolute;
+    background-color: white;
+    height: 20%;
+    width: 85%;
+    top: 160px;
+    right: 100px;
+    border-radius: 20px;
+    box-shadow: 1px 1px gray;
+}
+.about:hover{
+    transform: translateY(-10px);
+    transition: ease-in-out;
+}
+div.gallery{
+    position: absolute;
+    background-color: white;
+    height: 50%;
+    width: 85%;
+    top: 330px;
+    right: 100px;
+    border-radius: 20px;
+    box-shadow: 1px 1px gray;
+}
+div.img1{
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    background-color: red;
+    border-radius: 5px;
+    top: 120px;
+    right: 850px;
+}
+.img1:hover{
+    transform: scale(1.1,1.1);
+}
+div.img2{
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    background-color: blue;
+    border-radius: 5px;
+    top: 120px;
+    right: 650px; 
+}
+.img2:hover{
+    transform: scale(1.1,1.1);
+}
+div.img3{
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    background-color: green;
+    border-radius: 5px;
+    top: 120px;
+    right: 440px; 
+}
+.img3:hover{
+    transform: scale(1.1,1.1);
+}
+div.img4{
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    background-color: yellow;
+    border-radius: 5px;
+    top: 120px;
+    right: 230px;  
+}
+.img4:hover{
+    transform: scale(1.1,1.1);
+}
+div.img5{
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    background-color: rgb(245, 9, 198);
+    border-radius: 5px;
+    top: 120px;
+    right: 20px;   
+}
+.img5:hover{
+    transform: scale(1.1,1.1);
+}
+div.fun{
+    position: absolute;
+    background-color: white;
+    height: 65%;
+    width: 85%;
+    top: 700px;
+    right: 100px;
+    border-radius: 20px;
+    box-shadow: 1px 1px gray;
+}
+.art{
+    position: absolute;
+    height: 60px;
+    width: 1000px;
+    background-color: rgba(217, 217, 13, 0.961);
+    border-radius: 5px;
+    top: 110px;
+    right: 50px;
+}
+.music{
+    position: absolute;
+    height: 60px;
+    width: 1000px;
+    background-color: rgba(217, 217, 13, 0.961);
+    border-radius: 5px;
+    top: 180px;
+    right: 50px; 
+}
+.juggling{
+    position: absolute;
+    height: 60px;
+    width: 1000px;
+    background-color: rgba(217, 217, 13, 0.961);
+    border-radius: 5px;
+    top: 250px;
+    right: 50px; 
+}
+.parti{
+    position: absolute;
+    height: 60px;
+    width: 1000px;
+    background-color: rgba(217, 217, 13, 0.961);
+    border-radius: 5px;
+    top: 320px;
+    right: 50px; 
+}
+
+</style>
+</head>
+<body bgcolor="#ffe6e6">
+<div class="header">
+    <h1 class="head">Welcome to Playful Wonderland!</h1>
+    <div class="h1"><h4 style="font-family: cursive;">About</h4></div>
+    <h4 style="font-family: cursive;" class="h2">Gallery</h4>
+    <h4 style="font-family: cursive;" class="h3">Activities</h4>
+    <h4 style="font-family: cursive;" class="h4">Contact</h4>
+</div>
+<div class="about">
+<h2 style="font-family: cursive; position: absolute; top: 15px; left: 500px; color: red;">About Us</h2>
+<p style="font-family: cursive; position: absolute; top: 70px; left: 10px;">Discover the magic of creativity and fun!Join us for a journey filled with colours and laughter.</p>
+</div>
+<div class="gallery">
+<h1 style="font-family: cursive; position: absolute; top: 30px; left: 500px; color: red;">Gallery</h1>
+<div class="img1"><h5 style="font-family: cursive; position: absolute; top: 60px; left: 60px; color: white;">Image1</h5></div>
+<div class="img2"><h5 style="font-family: cursive; position: absolute; top: 60px; left: 60px; color: white;">Image2</h5></div>
+<div class="img3"><h5 style="font-family: cursive; position: absolute; top: 60px; left: 60px; color: white;">Image3</h5></div>
+<div class="img4"><h5 style="font-family: cursive; position: absolute; top: 60px; left: 60px; color: white;">Image4</h5></div>
+<div class="img5"><h5 style="font-family: cursive; position: absolute; top: 60px; left: 60px; color: white;">Image5</h5></div>
+</div>
+<div class="fun">
+<h1 style="font-family: cursive; position: absolute; top: 20px; left: 420px; color: red;">Fun Activities</h1>
+ <div class="art"></div>
+ <div class="music"></div>
+ <div class="juggling"></div>
+ <div class="parti"></div>
+</div>
+</body>
+</html>
