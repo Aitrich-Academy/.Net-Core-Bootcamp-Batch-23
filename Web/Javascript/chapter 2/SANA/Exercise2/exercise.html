@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body{
+
+margin: 0 !important;
+padding: 0 !important;
+font-family:monospace;
+}
+.container{
+
+display:flex;
+position: relative;
+}
+li:hover{
+background-color: rgb(78, 172, 223);
+
+border-radius: 3px;
+}
+.sidebar{
+
+height:998px;
+width:300px;
+background:#117ebd;
+font-size: 20px;
+}
+.navbar{
+    height:70px;
+    width:100%;
+}
+.details1{
+    position: absolute;
+    width: 25%;
+    height: 900px;
+    left: 280px;
+    top: 60px;
+}
+.details2{
+    position: absolute;
+    width: 25%;
+    height: 900px;
+    left: 550px;
+    top: 60px;
+}
+.messageDiv{
+    position: absolute;
+    width: 30%;
+    height: 700px;
+    left: 810px;
+    top: 120px;
+
+}
+.container{
+
+   display:flex;
+   position: relative;
+}
+.banner{
+    height:80px;
+    width:300px;
+    margin-left: 20px; 
+    margin-top: 10px;
+    color: black;  
+}   
+.containers {
+    position: relative;
+    align-items: center;
+  }
+  .box1 {
+    width: 300px; 
+    border-radius: 5px;
+    background: #cecccc76;
+    padding: 15px;
+    text-align: center;
+    font-weight: 200;
+    color: #181717;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+  }
+  .box2 {
+    width: 300px;
+    border-radius: 5px;
+    background: #117ebd;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    font-weight: 200;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+  }
+  .alen,.vivek,.sarah,.deepak{
+    position: relative;  
+  }
+  .alen:hover{
+    background-color: #969494;
+    width: 250px;
+  }
+  .vivek:hover{
+    background-color: #969494;
+    width: 250px;
+  }
+  .sarah:hover{
+    background-color: #969494;
+    width: 250px;
+  }
+  .deepak:hover{
+    background-color: #969494;
+    width: 250px;
+  }
+
+</style>
+</head>
+<body>
+    <div class="container" style="font-family: 'Times New Roman', Times, serif; color: white;">
+        <div class="sidebar">
+            <h2 style="text-align: center;margin-top:80px;color:white;">HireMe Now!</h2>
+            <div class="sidebar-menu">
+            <ul>
+           <li style="list-style-image:url('images/dashboard 1.png');    margin: 5px 30px">Dash Board</p></li>
+           <li style="list-style-image:url('images/suitcase 2.png');  margin: 5px 30px">Jobs</li><br>
+            <li style="list-style-image:url('images/application (1) 1.png');  margin: 5px 30px"> Applications</li><br>
+            <li style="list-style-image:url('images/question (1) 1.png');   margin: 5px 30px">Interviews</li><br>
+            <li style="list-style-image:url('images/message 1.png');   margin: 5px 30px">Messages</li><br>
+            <li style="list-style-image:url('images/settings 1.png');   margin: 5px 30px">Settings</li><br>
+        </ul>
+        <div style="text-align: center;">
+            <img src="images/add-group (1) 1.png"><br>AddNew</div>
+        </div>
+        </div>
+        <div class="navbar">
+            <div style="float: right;">
+            <table>
+               <tr>
+                <td ><a href=""><img src="images/notification-bing.png"></a></td>
+                <td><a href=""><img src="images/girl.png"></a></td>
+                <td><a href=""><img src="images/exit 1.png" align="center">Logout</a></td> 
+               </tr>
+            </table>
+           </div>
+        </div> 
+    <div class="details1">
+     <h3 style="color: black; margin-top: 80px; margin-left: 30px;">ShortList</h3> 
+     <div id="alen" onClick="showMessage(this.id)" class="alen">
+        <img src="images/man-isolated-showing-facial-emotions 2.png" style="margin-top: 20px; margin-left: 50px;">
+        <h4 style="color: black; margin: 20px; margin-left: 50px;">Alen</h4>
+        <ul type="none" style="margin-top: 20px; margin-left: 10px; color: black;">
+            <li>Qualification:MCA</li><br>
+            <li>Experience:3 year</li><br>
+            <li>Location:Banglore</li>
+        </ul>
+     </div>
+     <div id="vivek" onClick="showMessage(this.id)" class="vivek">
+        <img src="images/adult-serious-businessman-looking-camera 1.png" style="margin-top: 50px; margin-left: 50px;">
+        <h4 style="color: black; margin: 20px; margin-left: 50px;">Vivek</h4>
+        <ul type="none" style="margin-top: 20px; margin-left: 10px; color: black;">
+            <li>Qualification:Btech</li><br>
+            <li>Experience:5 year</li><br>
+            <li>Location:Thiruvananthapuram</li>
+        </ul>
+     </div>
+     </div>
+     <div class="details2"> 
+        <div id="sarah" onClick="showMessage(this.id)" class="sarah">
+            <img src="images/girl.png" style="margin-top: 150px; margin-left: 50px; height: 140px; width: 140px;">
+            <h4 style="color: black; margin: 20px; margin-left: 50px;">Sarah</h4>
+            <ul type="none" style="margin-top: 20px; margin-left: 10px; color: black;">
+                <li>Qualification:MSc</li><br>
+                <li>Experience:2 year</li><br>
+                <li>Location:Chennai</li>
+            </ul>
+         </div>
+         <div id="deepak" onClick="showMessage(this.id)" class="deepak">
+            <img src="images/member (2).png" style="margin-top: 50px; margin-left: 50px; width: 130px; height: 130px;">
+            <h4 style="color: black; margin: 20px; margin-left: 50px;">Deepak Roy</h4>
+            <ul type="none" style="margin-top: 20px; margin-left: 10px; color: black;">
+                <li>Qualification:Btech</li><br>
+                <li>Experience:2 year</li><br>
+                <li>Location:Calicut</li>
+            </ul>
+         </div>
+     </div>
+<div id="messageDiv" class="messageDiv">
+  <div class="banner" id="message1" style="position: absolute; background-color: #f9f9f9;">
+    <div id="alen" style="display: flex;justify-content: space-between;">
+        <div>
+            <h3>Alen</h3>
+            <p>Online</p>
+        </div>
+        
+        <div class="box1" align="right" style="top: 100px;">Hello Alen.</div>
+        <div class="box2 " style=" top: 180px; left: 50px;">Hello sir</div>
+        <div class="box1" align="right" style=" top: 280px; ">What about your experience</div>
+        <div class="box2"style=" top: 350px; left: 50px;">3 year</div>
+        <div id="alenmsg"  style=" top: 400px; left: 50px;" class="box2"></div>
+        <div class="containers" style="margin-top: 600px; margin-left: -60px;">
+        <input type="text" id="alenInput" placeholder="Type your message here" style="width: 350px; height: 40px; border: #969494 solid; border-radius: 10px;">
+        <button id="alenBtn" onclick="submit('alen')" style="background-color: #117ebd; border: none; ">send</button>
+       </div> 
+    </div>   
+  </div>   
+  <div class="banner" id="message2" style="position: absolute; background-color: #f9f9f9;">
+    <div id="vivek" style="display: flex;justify-content: space-between;">
+        <div>
+            <h3>Vivek</h3>
+            <p>Online</p>
+        </div>
+        <div class="box1" align="right" style="top: 100px;">Hello Vivek.</div>
+        <div class="box2 " style=" top: 180px; left: 50px;">Hello sir</div>
+        <div class="box1" align="right" style=" top: 280px; ">What about your experience</div>
+        <div class="box2"style=" top: 350px; left: 50px;">5 year</div>
+        <div class="containers" style="margin-top: 600px; margin-left: -60px;">
+        <input type="text" id="vivekTextBox" placeholder="Type your message here" style="width: 350px; height: 40px; border: #969494 solid; border-radius: 10px;">
+        <button onclick="submit('vivek')" style="background-color: #117ebd; border: none; ">send</button>
+       </div> 
+    </div>   
+  </div>  
+  <div class="banner" id="message3" style="position: absolute; background-color: #f9f9f9;">
+    <div style="display: flex;justify-content: space-between;">
+        <div>
+            <h3>Sarah</h3>
+            <p>Online</p>
+        </div>
+        <div class="box1" align="right" style="top: 100px;">Hello Sarah.</div>
+        <div class="box2 " style=" top: 180px; left: 50px;">Hello sir</div>
+        <div class="box1" align="right" style=" top: 280px; ">What about your experience</div>
+        <div class="box2"style=" top: 350px; left: 50px;">3 year</div>
+       <div class="containers" style="margin-top: 600px; margin-left: -60px;">
+        <input type="text" id="sarahTextBox" placeholder="Type your message here" style="width: 350px; height: 40px; border: #969494 solid; border-radius: 10px;">
+        <button onclick="submit('sarah')" style="background-color: #117ebd; border: none; ">send</button>
+       </div> 
+    </div>   
+  </div> 
+  <div class="banner" id="message4" style="position: absolute; background-color: #f9f9f9;">
+    <div style="display: flex;justify-content: space-between;">
+        <div>
+            <h3>Deepak</h3>
+            <p>Online</p>
+        </div>
+        <div class="box1" align="right" style="top: 100px;">Hello Deepak.</div>
+        <div class="box2 " style=" top: 180px; left: 50px;">Hello sir</div>
+        <div class="box1" align="right" style=" top: 280px; ">What about your experience</div>
+        <div class="box2"style=" top: 350px; left: 50px;">3 year</div>
+       <div class="containers" style="margin-top: 600px; margin-left: -60px;">
+        <input type="text"  id="daapakTextBox"placeholder="Type your message here" style="width: 350px; height: 40px; border: #969494 solid; border-radius: 10px;">
+        <button onclick="submit('deepak')" style="background-color: #117ebd; border: none; ">send</button>
+       </div> 
+    </div>   
+  </div>      
+</div>
+<script>
+var clicked="false";
+function showMessage(id){
+   if(id=="alen"){
+    var a= document.getElementById("message1");
+    var b= document.getElementById("message2");
+    var c= document.getElementById("message3");
+    var d= document.getElementById("message4");
+    a.style.display="block";
+    b.style.display="none";
+    c.style.display="none";
+    d.style.display="none";
+   }
+   else if(id=="vivek"){
+    var a= document.getElementById("message1");
+    var b= document.getElementById("message2");
+    var c= document.getElementById("message3");
+    var d= document.getElementById("message4");
+    a.style.display="none";
+    b.style.display="block";
+    c.style.display="none";
+    d.style.display="none";
+   }
+   else if(id=="sarah"){
+    var a= document.getElementById("message1");
+    var b= document.getElementById("message2");
+    var c= document.getElementById("message3");
+    var d= document.getElementById("message4");
+    a.style.display="none";
+    b.style.display="none";
+    c.style.display="block";
+    d.style.display="none";
+   }
+   else 
+   {
+    var a= document.getElementById("message1");
+    var b= document.getElementById("message2");
+    var c= document.getElementById("message3");
+    var d= document.getElementById("message4");
+    a.style.display="none";
+    b.style.display="none";
+    c.style.display="none";
+    d.style.display="block";
+   }
+}
+function submit(text){
+    if(text=="alen")
+    {
+    let alenInput=document.getElementById('alenInput').value;
+    let addBtn=document.getElementById('alenBtn')
+    let msg=document.getElementById('alenmsg');
+    let inputData= alenInput.value;
+    let div= document.createElement("div");
+    div.innerText=alenInput;
+    msg.appendChild(div);
+    alenInput.value="";
+    alenInput.focus();
+    console.log(div);
+}  
+}
+</script>
+</body>
+</html>

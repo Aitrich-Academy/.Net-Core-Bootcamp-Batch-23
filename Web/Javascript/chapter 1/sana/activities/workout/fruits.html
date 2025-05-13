@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+ .card-container{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+ }   
+ .card{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;    
+ }
+ .cardimg{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+ }
+</style>
+</head>
+<body>
+<button onclick="createFruitCards()">Add Fruit Cards</button>  
+<script>
+ function createFruitCards(){
+  const fruits=[
+    {name:"Apple",price:"$20",image:"https://in.images.search.yahoo.com/search/images;_ylt=AwrKBItMKhJoMwIA0a.7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=apple+image&fr2=piv-web&type=E210IN826G0&fr=mcafee#id=0&iurl=https%3A%2F%2Fhealthjade.com%2Fwp-content%2Fuploads%2F2017%2F10%2Fapple-fruit.jpg&action=click"},
+    {name:"Banana",price:"$80",image:"https://in.images.search.yahoo.com/search/images;_ylt=AwrtgQdPKhJoy0EN0za9HAx.;_ylu=c2VjA3NlYXJjaARzbGsDYnV0dG9u;_ylc=X1MDMjExNDcyMzAwNQRfcgMyBGZyA21jYWZlZQRmcjIDcDpzLHY6aSxtOnNiLXRvcARncHJpZANKUUJJa19CdlJUaW9McXJxczh3NUVBBG5fcnNsdAMwBG5fc3VnZwMxMARvcmlnaW4DaW4uaW1hZ2VzLnNlYXJjaC55YWhvby5jb20EcG9zAzAEcHFzdHIDBHBxc3RybAMwBHFzdHJsAzEyBHF1ZXJ5A2JhbmFuYSUyMGltYWdlBHRfc3RtcAMxNzQ2MDIxMjM1?p=banana+image&fr=mcafee&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&ei=UTF-8&x=wrt&type=E210IN826G0#id=0&iurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F8%2F8a%2FBanana-Single.jpg%2F2324px-Banana-Single.jpg&action=click"},
+    {name:"Orange",price:"$40",image:"https://in.images.search.yahoo.com/search/images;_ylt=AwrtgQeyKhJowm0NyCi9HAx.;_ylu=c2VjA3NlYXJjaARzbGsDYnV0dG9u;_ylc=X1MDMjExNDcyMzAwNQRfcgMyBGZyA21jYWZlZQRmcjIDcDpzLHY6aSxtOnNiLXRvcARncHJpZAMxUk1HTnk5VVNqZVdoWWlnamlCVzJBBG5fcnNsdAMwBG5fc3VnZwMxMARvcmlnaW4DaW4uaW1hZ2VzLnNlYXJjaC55YWhvby5jb20EcG9zAzAEcHFzdHIDBHBxc3RybAMwBHFzdHJsAzEyBHF1ZXJ5A29yYW5nZSUyMGltYWdlBHRfc3RtcAMxNzQ2MDIxMzU0?p=orange+image&fr=mcafee&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&ei=UTF-8&x=wrt&type=E210IN826G0#id=0&iurl=http%3A%2F%2Fpngimg.com%2Fuploads%2Forange%2Forange_PNG780.png&action=click"},
+    {name:"Grape",price:"$100",image:"https://in.images.search.yahoo.com/search/images;_ylt=AwrtiWwqKxJoeG0NrDW9HAx.;_ylu=c2VjA3NlYXJjaARzbGsDYnV0dG9u;_ylc=X1MDMjExNDcyMzAwNQRfcgMyBGZyA21jYWZlZQRmcjIDcDpzLHY6aSxtOnNiLXRvcARncHJpZANfRjBmbnZLTVRSaVFRd3BVQ3hPQUtBBG5fcnNsdAMwBG5fc3VnZwMxMARvcmlnaW4DaW4uaW1hZ2VzLnNlYXJjaC55YWhvby5jb20EcG9zAzAEcHFzdHIDBHBxc3RybAMwBHFzdHJsAzExBHF1ZXJ5A2dyYXBlJTIwaW1hZ2UEdF9zdG1wAzE3NDYwMjEzODI-?p=grape+image&fr=mcafee&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&ei=UTF-8&x=wrt&type=E210IN826G0#id=0&iurl=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F708777%2Fpexels-photo-708777.jpeg%3Fcs%3Dsrgb%26dl%3Dbunch-cluster-delicious-708777.jpg%26fm%3Djpg&action=click"}
+  ];
+  const containerDiv=document.createElement("div");
+  containerDiv.className="card-container";
+  fruits.forEach(fruit=>{
+    const card=document.createElement("div");
+    card.className="card";
+    const img=document.createElement("img");
+    img.srtc=fruit.image;
+    const name=document.createElement("h4");
+    name.innerText=fruit.name;
+    const price=document.createElement("p");
+    price.innerText= fruit.price;
+    card.appendChild(img);
+    card.appendChild(name);
+    card.appendChild(price);
+    containerDiv.appendChild(card);
+  });
+  document.body.appendChild(containerDiv);
+ }  
+</script> 
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    li {
+      margin-left: 550px;
+      margin-top: -38px;
+    }
+    .cart-item {
+      display: flex;
+      justify-content:space-between;
+      width: 250px;
+    }
+    .btn-group button {
+      margin-left: 5px;
+    }
+
+</style>
+</head>
+<body bgcolor="#ffe066">
+ <h2 style="text-align: center;">Add To Cart</h2>  
+ <div style="margin-left: 510px;">
+ <input type="text" id="productInput" placeholder="Enter product name">
+ <button style="background-color: cornflowerblue;" onclick="addToCart()">Add</button>
+</div> 
+ <h3 style="margin-left: 510px;">Cart:</h3>
+ <ul id="cartList"></ul>
+
+ <script>
+ function addToCart(){
+    const input=document.getElementById('productInput');
+    const productName=input.value.trim();
+
+    if (productName==="") return;
+
+    const cartList=document.getElementById('cartList');
+    const li=document.createElement('li');
+    li.className="cart-item";
+    const span=document.createElement('span');
+    span.textContent=productName;
+    li.appendChild(span);
+    cartList.appendChild(li);
+    const buttonGroup = document.createElement('div');
+    buttonGroup.className = "btn-group";
+
+    const deleteBtn=document.createElement('button');
+    deletBtn.textContent="Delete";
+    deleteBtn.onclick=function(){
+    cartList.removeChild('li');
+    };
+
+    const editBtn = document.createElement('button');
+    editBtn.textContent = "Edit";
+    editBtn.onclick = function () {
+    const newName = prompt("Edit product name:", span.textContent);
+        if (newName !== null && newName.trim() !== "") {
+          span.textContent = newName.trim();
+        }
+      };
+    // Add buttons to button group
+    buttonGroup.appendChild(editBtn);
+      buttonGroup.appendChild(deleteBtn);
+
+      // Add span and button group to list item
+      
+      li.appendChild(buttonGroup);
+
+      // Add list item to cart
+      
+
+      input.value = ""; // Clear input
+ }
+
+ </script>
+</body>
+</html>

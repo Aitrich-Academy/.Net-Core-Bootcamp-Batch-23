@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+<script>
+function validateForm(){
+    let name=document.forms["myForm"]["name"].value;
+    let email=document.forms["myForm"]["email"].value;
+    let password=document.forms["myForm"]["password"].value;
+    if(name==""){
+        alert("Name must be filledout");
+        return false;
+    }
+    if(email.match(emailpattern)){
+        alert("Invalid email format");
+        return false;
+    }
+    if(password.length<6){
+        alert("Password must be atleast 6 characters long ");
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+<body>
+<h2>Registration Form</h2>    
+<form name="myForm" onsubmit="return validateForm()">
+Name:<input type="text" name="name">
+<br><br>
+Email:<input type="email" name="email">
+<br><br>
+Password:<input type="password" name="password">
+<br><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

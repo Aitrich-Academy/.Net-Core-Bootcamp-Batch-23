@@ -5,7 +5,7 @@ function validateUser()
     var password=document.getElementById("password").value;
     if(email=="" ||  email==null)
     {
-        alert("Please Enter Your Email ");
+        alert("Please Enter Valid Email ");
         return false;
     }
     if(password=="" ||  password==null)

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.message{
+    position: absolute;
+    height: 20px;
+    width: 70px;
+    border: 1px solid rgb(4, 4, 57);
+    background-color: rgb(156, 238, 241);
+    border-top-right-radius: -20;
+    margin-top: 5px;
+}
+.textDiv{
+    position: absolute;
+    height: 200px;
+    width: 150px;
+    background-color: rgb(220, 142, 86);
+   color: blue;
+   
+}
+</style>
+</head>
+<body>
+<div class="form">
+<h2 style="text-align: center;"><u>Enter Your Details</u></h2>
+Enter Your Name:<br>
+<input type="text" placeholder="Enter Name" class="text" id="text">
+<button onClick="showname()">Submit</button>
+</div>
+
+<script>
+
+
+function showname(){
+    let getname=document.getElementById('text').value;
+    let div=document.createElement('div');
+     div.className='textDiv';
+
+    let subdiv=document.createElement('div');
+    subdiv.className='message';
+     
+    subdiv.innerText=getname;
+    div.appendChild(subdiv);
+    document.body.appendChild(div);
+
+
+    
+
+}
+
+
+</script>
+    
+</body>
+</html>

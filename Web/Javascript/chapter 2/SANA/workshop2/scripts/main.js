@@ -3,6 +3,7 @@ function showForm(buttonVal)
     var id=document.getElementById('myTextBox');
     
     var skillButton=document.getElementById('myButton');
+    var eduButton=document.getElementById('eduButton');
     var expButton=document.getElementById('expButton');
 
     if(buttonVal=="myButton1")
@@ -81,10 +82,10 @@ function add(text)
     var data=document.getElementById('expTextBox').value;
     var textBox=document.getElementById('expTextBox');
      var listId=document.getElementById('expList');
-     var edu=[]
+     var exp=[]
     exp.push(data);
      console.log(exp);
-     for(i=0;i<edu.length;i++)
+     for(i=0;i<exp.length;i++)
      {
          // Create a new list item
          var li = document.createElement('li');

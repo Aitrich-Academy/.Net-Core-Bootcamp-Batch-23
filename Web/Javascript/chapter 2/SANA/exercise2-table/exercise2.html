@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+ .maincontainer{
+            width: 100%;
+            height: max-content;
+            border:1px solid red;
+            position: relative;
+            
+ }
+.leftcontainer{
+            width: 20%;
+            height: 700px;
+            border: 1px solid green;
+            text-align: center;
+            background-color: rgb(0, 122, 204);
+            color: white;
+}
+.hirehead{
+            margin-top: 40px;
+            font-size: xx-large;
+            font-weight: bold;
+}
+ul{
+            list-style: none;
+            margin-top: 50px;
+}
+        .menuitem{
+            display: flex;
+            align-items: center;
+            gap: 30px; 
+            margin-bottom: 15px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        .rightcontainer{
+            border: 1px solid blue;
+            width: 80%;
+            height: 700px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        table{
+            border: 1px solid brown;
+            position: absolute;
+            top: 200px;
+            left: 70px;
+        }
+</style>
+</head>
+<body>
+   <div class="maincontainer">
+      <div class="leftcontainer"> 
+          <div class="hirehead">Hire Me Now!</div>
+          <ul>
+              <li class="menuitem">
+                  <img src="/images/dashboard 1.png" alt="">
+                  <a href="#">Dashboard</a>
+              </li>
+              <li class="menuitem"> 
+                  <img src="/images/suitcase 2.png" alt="">
+                  <a href="#">Jobs</a>
+              </li>
+              <li class="menuitem">
+                  <img src="/images/application (1) 1.png" alt="">
+                  <a href="#">Applications</a>
+              </li>
+              <li class="menuitem">
+                  <img src="/images/question (1) 1.png" alt="">
+                  <a href="#">Interviews</a>
+              </li>
+              <li class="menuitem">
+                  <img src="/images/message 1.png" alt="">
+                  <a href="#">Messages</a>
+              </li>
+              <li class="menuitem">
+                  <img src="/images/settings 1.png" alt="">
+                  <a href="#">Settings</a>
+              </li>
+              
+          </ul>
+   <div class="addnew">
+            <img src="/images/add-group (1) 1.png" alt=""><br>
+            <a href="">AddNew</a>
+   </div>
+
+   </div>
+   <div class="rightcontainer">
+     <table id="candidatetable">
+        <thead><tr><th></th>
+            <th></th></tr></thead>
+
+        <tbody id="tablebody"></tbody>
+
+     </table>
+   </div>
+</div>
+
+</body>
+</html>
