@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h2>Form for Job Application</h2>
+        <form name="application" onsubmit="jobvalidation()">
+            Full Name: <br>
+            <input type="text" name="username" ><br>
+            Email:<br>
+            <input type="email" name="useremail"><br>
+            Phone Number:<br>
+            <input type="tel" name="userphone"><br>
+            Date of Birth:<br>
+            <input type="date" name="userdob"><br>
+            Resume upload:<br>
+            <input type="file" name="userresume"><br>
+            Experience (Years):<br>
+            <input type="number" name="userexperience" min="0" max="40"><br>
+            Preferred Location:<br>
+            <input type="text" name="userlocation"><br>
+            Portfolio Link (Optional):<br>
+            <input type="url" name="userlink"><br>
+            Gender:<br>
+            <input type="radio" name="usergender">male
+            <input type="radio" name="usergender">female<br>
+            
+            <input type="checkbox" name="usertc">
+            I agree to the <a href="#" target="_blank">Terms and Conditions</a> <br>
+            <input type="submit" value="submit">
+            
+            
+        </form>
+        <script>
+            function jobvalidation(){
+                let name=document.forms['application']['username'].value;
+                let email=document.forms['application']['useremail'].value;
+                let phone=document.forms['application']['userphone'].value;
+                let dob=document.forms['application']['userdob'].value;
+                let resume=document.forms['application']['userresume'].value;
+                let experience=document.forms['application']['userexperience'].value;
+                let location=document.forms['application']['userlocation'].value;
+                let link=document.forms['application']['userlink'].value;
+                let gender=document.forms['application']['usergender'].value;
+                let tc=document.forms['application']['usertc'].checked;
+    
+                // Full Name – Should only contain letters (No numbers or special characters).
+                let namepattern=/^[A-Za-z\s]+$/;
+                if(!name.match(namepattern)){
+                    alert("should only contaion letters and spaces")
+                    return false;
+                }
+                // Email – Must be in a valid email format (example@mail.com).
+                let emailpattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if(!email.match(emailpattern)){
+                    alert("invalid email format")
+                    return false;
+                }
+                // Phone Number – Must be exactly 10 digits.
+                let phonepattern=/^[6-9]\d{9}$/;
+                if(!phone.match(phonepattern)){
+                    alert("phone number must contain 10 digits");
+                    return false;
+                }
+                // Date of Birth (DOB) – Must be 18 years or older.
+                // Resume Upload – Must be a .pdf or .docx file.
+                // Experience (Years) – Should be a number between 0 and 40.
+                if(experience<0 && experience>40){
+                    alert("experience must be between 0 to 40 years")
+                    return false;
+                }
+                // Preferred Location – Should not be empty.
+                if(location==""){
+                    alert("Location should not be empty")
+                    return false;
+                 }
+                // Portfolio Link (Optional) – Must be a valid URL if entered.
+                let urlpattern= /^(https?:\/\/)?([\w-]+\.)+[\w-]{2,}(\/[\w\-._~:/?#[\]@!$&'()+,;=])?$/i;
+                if(!link.match(urlpattern)){
+                    alert("must be a valid url");
+                    return false;
+                }
+    
+                // Gender Selection – At least one gender should be selected (Radio Button).
+                if(!gender){
+                    alert("select your gender");
+                    return false;
+                }
+                // Terms & Conditions – Must be checked before submission. 
+                if(!tc){
+                    alert("You must agree to the Terms and Conditions");
+                    return false;
+                }
+                return true;
+    
+               
+            }
+        
+    
+        </script>
+    
+    
+    <!-- Full Name – Should only contain letters (No numbers or special characters).
+    Email – Must be in a valid email format (example@mail.com).
+    Phone Number – Must be exactly 10 digits.
+    Date of Birth (DOB) – Must be 18 years or older.
+    Resume Upload – Must be a .pdf or .docx file.
+    Experience (Years) – Should be a number between 0 and 40.
+    Preferred Location – Should not be empty.
+    Portfolio Link (Optional) – Must be a valid URL if entered.
+    Gender Selection – At least one gender should be selected (Radio Button).
+    Terms & Conditions – Must be checked before submission. -->   
+</body>
+</html>

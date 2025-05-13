@@ -1,0 +1,77 @@
+
+ <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Simple Add to Cart</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          padding: 20px;
+        }
+        input, button {
+          padding: 8px;
+          margin: 5px;
+        }
+        li {
+          margin: 8px 0;
+        }
+        .cart-item {
+          display: flex;
+          justify-content: space-between;
+          width: 200px;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <h2>Simple Add to Cart</h2>
+      <input type="text" id="productInput" placeholder="Enter product name">
+      <button onclick="addToCart()">Add to Cart</button>
+    
+      <h3>Cart:</h3>
+      <ul id="cartList">
+       
+       
+      </ul>
+    
+      <script>
+        function addToCart() {
+          const input = document.getElementById('productInput');
+          const productName = input.value.trim();
+    
+          if (productName === "") return;
+    
+          const cartList = document.getElementById('cartList');
+    
+          // Create a new list item
+          const li = document.createElement('li');
+          li.className = "cart-item";
+         
+    
+          // Add product name
+          const span = document.createElement('span');
+          span.textContent = productName;
+    
+          // Create delete button
+          const deleteBtn = document.createElement('button');
+          deleteBtn.textContent = "Delete";
+          deleteBtn.onclick = function() {
+            cartList.removeChild(li);
+          };
+    
+          // Add name and button to the list item
+          li.appendChild(span);
+          li.appendChild(deleteBtn);
+    
+          // Add list item to cart
+          cartList.appendChild(li);
+    
+          input.value = ""; // Clear input
+      
+    
+          input.focus();
+        }
+      </script>
+
+</body>
+</html>

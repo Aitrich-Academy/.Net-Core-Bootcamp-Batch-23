@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.main{
+    position: relative;
+    height: 400px;
+    width: 700px;
+    align-content: center;
+    background-color: cornflowerblue;
+    color: black;
+    border: 5px solid black;
+    margin-left: 200px;
+
+}
+.show{
+    height: 100px;
+    width: 300px;
+    background-color: aquamarine;
+    border: 1 px solid black;
+    margin-top: 100px;
+    margin-left: 350px;
+}
+
+</style>
+</head>
+<body bgcolor="#ffdd99">
+<div class="main" id="main">
+ <h2 style="margin-top: -200px; margin-left: 230px;"><u>Enter the Details</u></h2>  
+ <h4>Enter the Name:</h4><br>
+ <input type="text" id="text" placeholder="Enter your name" size="50px">
+ <h4>Enter the Email:</h4><br>
+ <input type="email" id="email" class="text" placeholder="Enter your email" size="70px"><br><br>
+ <button onclick="display()" style="background-color: darkorchid; width: 70px; height: 40px; text-align: center; margin-left: 250px;">Enter</button>
+</div>
+   
+
+
+
+<script>
+function display(){
+    let input=document.getElementById("text");
+    let inputText=input.value;
+    let div=document.createElement("div");
+    div.className="show";
+    div.innerText=inputText;
+    document.body.appendChild(div);
+
+}
+</script>
+</body>
+</html>

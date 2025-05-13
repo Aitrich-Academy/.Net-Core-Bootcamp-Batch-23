@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1 style="text-align: center; color: blueviolet;">Welcome to kitchen</h1>   
+ <br><br>
+ <ul id="kitchen-items-list" class="kitchen-items-list" style="color: brown;"></ul>
+ <script>
+  
+   let kitchenItemsList=document.getElementById("kitchen-items-list");
+   let curryPowder=["salt","pepper","Turmeric","chilli","green chilli"];
+   //method 1
+  //for (let powder of curryPowder){
+   // let li=document.createElement("li");
+   // li.innerText=powder;
+   // kitchenItemsList.appendChild(li);
+   // consol.log("li");
+   //};
+   //method2
+   curryPowder.forEach(function(powder){
+    let li=document.createElement("li");
+     li.innerText=powder;
+     kitchenItemsList.appendChild(li);
+     console.log("li");
+   });
+ </script>
+ 
+</body>
+</html>
